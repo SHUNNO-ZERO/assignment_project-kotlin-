@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">Mvp_Mvp</string>
+
+
+    <string name="android_new_mvp_architecture">New Mvp Project</string>
+    <string name="price_level_new">Price</string>
+    <string name="list_of_bangladeshi_list">List of Bangladeshi dishes</string>
+    <string name="tk">%d 100 TK</string>
+</resources>

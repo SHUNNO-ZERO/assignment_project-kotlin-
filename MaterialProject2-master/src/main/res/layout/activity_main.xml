@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background_design"
+    tools:context=".MainActivity">
+
+
+    <com.google.android.material.card.MaterialCardView
+        android:id="@+id/materialCardView"
+        android:layout_width="360dp"
+        android:layout_height="250dp"
+        android:background="@drawable/background_design"
+        android:checkable="true"
+        android:clickable="true"
+        android:focusable="true"
+        app:layout_constraintBottom_toBottomOf="parent"
+
+
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toStartOf="parent"
+
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.095">
+
+
+        <com.google.android.material.imageview.ShapeableImageView
+            android:id="@+id/ma_Image_View"
+
+
+            android:layout_width="match_parent"
+            android:layout_height="213dp"
+            android:background="@drawable/asif"
+
+
+            />
+
+        <TextView
+            android:id="@+id/ma_example_title"
+            android:layout_width="120dp"
+            android:layout_height="32dp"
+            android:layout_marginTop="220dp"
+            android:paddingLeft="30dp"
+            android:text="@string/example_title"
+            android:textColor="@color/black"
+            android:textStyle="bold" />
+
+
+    </com.google.android.material.card.MaterialCardView>
+
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/ma_phone_button"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:background="@drawable/ic_baseline_local_phone_24"
+        android:onClick="call"
+
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.459"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/materialCardView"
+        app:layout_constraintVertical_bias="0.051" />
+
+
+    <Button
+        android:id="@+id/ma_email_button"
+        android:layout_width="50dp"
+
+        android:layout_height="50dp"
+        android:background="@drawable/ic_baseline_email_24"
+
+
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.241"
+        app:layout_constraintStart_toEndOf="@+id/ma_phone_button"
+        app:layout_constraintTop_toBottomOf="@+id/materialCardView"
+        app:layout_constraintVertical_bias="0.049" />
+
+    <ListView
+        android:id="@+id/ma_listview_id"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:divider="@color/black"
+        android:dividerHeight="2dp"
+        android:layout_margin="30dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/ma_email_button"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"/>
+
+    <Button
+        android:id="@+id/ma_camera_button"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+       android:background="@drawable/ic_baseline_camera_24"
+        app:layout_constraintBottom_toTopOf="@+id/ma_listview_id"
+        app:layout_constraintEnd_toStartOf="@+id/ma_phone_button"
+        app:layout_constraintHorizontal_bias="0.547"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/ma_phone_button"
+        app:layout_constraintVertical_bias="0.062" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
+
